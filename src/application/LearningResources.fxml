@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="970.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LearningResourcesController">
+   <children>
+      <Pane layoutX="15.0" layoutY="58.0" prefHeight="153.0" prefWidth="943.0" style="-fx-background-color: #ffffff; -fx-border-radius: 20px; -fx-border-color: #25271D #25271D; -fx-background-radius: 20px;">
+         <children>
+            <Label alignment="CENTER" layoutX="23.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="892.0" text="DATA STRUCTURES AND ALGORITHMS" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Next Bold" size="22.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="30.0" layoutY="73.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="30.0" layoutY="127.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Hyperlink layoutX="58.0" layoutY="48.0" onAction="#dsa1" prefHeight="49.0" prefWidth="441.0" text="https://www.geeksforgeeks.org/data-structures/" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="58.0" layoutY="103.0" onAction="#dsa2" prefHeight="49.0" prefWidth="892.0" text="https://www.youtube.com/watch?v=0IAPZzGSbME&amp;list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="249.0" prefHeight="153.0" prefWidth="943.0" style="-fx-background-color: #ffffff; -fx-border-radius: 20px; -fx-border-color: #25271D #25271D; -fx-background-radius: 20px;">
+         <children>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="891.0" text="DATABASE MANAGEMENT SYSTEM" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Next Bold" size="22.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="30.0" layoutY="69.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="30.0" layoutY="125.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Hyperlink layoutX="58.0" layoutY="45.0" onAction="#dbms1" prefHeight="49.0" prefWidth="385.0" text="https://www.javatpoint.com/dbms-tutorial" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="58.0" layoutY="101.0" onAction="#dbms2" prefHeight="49.0" prefWidth="305.0" text="https://www.w3schools.in/dbms/" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="442.0" prefHeight="153.0" prefWidth="943.0" style="-fx-background-color: #ffffff; -fx-border-radius: 20px; -fx-border-color: #25271D #25271D; -fx-background-radius: 20px;">
+         <children>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="893.0" text="OBJECT ORIENTED PROGRAMMING" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Next Bold" size="22.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="30.0" layoutY="67.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="30.0" layoutY="118.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Hyperlink layoutX="58.0" layoutY="43.0" onAction="#oop1" prefHeight="49.0" prefWidth="761.0" text="https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="58.0" layoutY="94.0" onAction="#oop2" prefHeight="49.0" prefWidth="892.0" text="https://www.tutorialspoint.com/cplusplus/cpp_object_oriented.htm" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="633.0" prefHeight="153.0" prefWidth="943.0" style="-fx-background-color: #ffffff; -fx-border-radius: 20px; -fx-border-color: #25271D #25271D; -fx-background-radius: 20px;">
+         <children>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="890.0" text="SYSTEM PROGRAMMING AND OPERATING SYSTEM" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Next Bold" size="22.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="30.0" layoutY="70.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="30.0" layoutY="124.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Hyperlink layoutX="55.0" layoutY="46.0" onAction="#spos1" prefHeight="49.0" prefWidth="544.0" text="https://www.tutorialspoint.com/operating_system/index.htm" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="50.0" layoutY="100.0" onAction="#spos2" prefHeight="49.0" prefWidth="933.0" text="https://www.youtube.com/watch?v=vBURTt97EkA&amp;list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O" textFill="#26c2d0" underline="true">
+               <font>
+                  <Font name="Times New Roman Italic" size="21.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <JFXButton fx:id="CloseButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="916.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close" prefHeight="32.0" prefWidth="32.0" ripplerFill="#ed0404" style="-fx-background-color: #f0f0f0; -fx-background-radius: 50px;" text="X" textFill="#212020">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="850.0" style="-fx-background-color: #F0D562;">
+         <children>
+            <JFXButton fx:id="CloseButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="806.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close" prefHeight="30.0" prefWidth="30.0" ripplerFill="#ff0404" style="-fx-background-color: #25271D; -fx-background-radius: 30px;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="454.0" fitWidth="486.0" layoutX="173.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/logo_tquiz.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="850.0" style="-fx-background-color: #25271D;">
+         <children>
+            <JFXButton fx:id="StudentButton" buttonType="RAISED" layoutX="335.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openLoginPage" prefHeight="50.0" prefWidth="180.0" ripplerFill="WHITE" style="-fx-background-color: #ffffff; -fx-background-radius: 30px;" text="PROCEED">
+               <font>
+                  <Font name="Avenir Next Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3.0" prefWidth="850.0" style="-fx-background-color: black;" />
+         </children></Pane>
+   </children>
+</AnchorPane>

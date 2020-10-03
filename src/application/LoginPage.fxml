@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content_area_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginPageController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #F0D562;">
+         <children>
+            <ImageView fitHeight="496.0" fitWidth="429.0" layoutX="11.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_tquiz.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="content_area" layoutX="450.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane layoutX="33.0" layoutY="57.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="334.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;">
+               <children>
+                  <Label layoutX="97.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="120.0" text="Sign In" textFill="#25271d">
+                     <font>
+                        <Font name="Avenir Next Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="112.0" layoutY="412.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="75.0" text="New User?" textFill="#25271d">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="LoginButton" buttonType="RAISED" layoutX="77.0" layoutY="327.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#signIn" prefHeight="50.0" prefWidth="180.0" ripplerFill="WHITE" style="-fx-background-color: #25271D; -fx-background-radius: 40px;" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Next Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="SignUpButton" layoutX="175.0" layoutY="405.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openSignUpPage" prefHeight="30.0" prefWidth="75.0" ripplerFill="WHITE" text="Sign Up" textFill="#25271d" underline="true">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <TextField fx:id="Username" layoutX="42.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Email ID" style="-fx-background-color: #ffffff;">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="Password" layoutX="42.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: #ffffff;">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Line endX="20.0" fill="#4bcedd" layoutX="272.0" layoutY="195.0" startX="-230.0" stroke="#25271d" />
+                  <Line endX="20.0" fill="#4bcedd" layoutX="272.0" layoutY="266.0" startX="-230.0" stroke="#25271d" />
+                  <Label fx:id="errorLabel" layoutX="80.0" layoutY="288.0" prefHeight="17.0" prefWidth="175.0" textAlignment="CENTER" textFill="#d76060">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="CloseButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="356.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close" prefHeight="30.0" prefWidth="30.0" ripplerFill="#ed0404" style="-fx-background-color: #ffffff; -fx-background-radius: 50px;" text="X" textFill="#212020">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="BackButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openMainPage" prefHeight="30.0" prefWidth="30.0" ripplerFill="#4bcedd" style="-fx-background-color: #ffffff; -fx-background-radius: 50px;" text="&lt;" textFill="#212020">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

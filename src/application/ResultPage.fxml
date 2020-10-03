@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1270.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ResultPageController">
+   <children>
+      <Pane layoutX="80.0" layoutY="71.0" prefHeight="693.0" prefWidth="1109.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5px;">
+         <children>
+            <Label layoutX="410.0" layoutY="312.0" prefHeight="52.0" prefWidth="290.0" text="Your score is" textFill="#25271d">
+               <font>
+                  <Font name="Arial Bold" size="45.0" />
+               </font>
+            </Label>
+            <Pane layoutX="480.0" layoutY="375.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="150.0">
+               <children>
+                  <Label fx:id="Result" alignment="CENTER" layoutX="2.0" layoutY="15.0" prefHeight="65.0" prefWidth="70.0" text="10" textAlignment="CENTER" textFill="#43d77e">
+                     <font>
+                        <Font name="Arial Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="15.0" prefHeight="65.0" prefWidth="70.0" text="20" textFill="#25271d">
+                     <font>
+                        <Font name="Arial Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="4.0" prefHeight="87.0" prefWidth="19.0" text="/" textFill="#25271d">
+                     <font>
+                        <Font name="Arial" size="76.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="Back" buttonType="RAISED" layoutX="444.0" layoutY="564.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#backToDashboardPage" prefHeight="68.0" prefWidth="213.0" ripplerFill="WHITE" style="-fx-background-color: #25271D #25271D; -fx-background-radius: 30px;" text="BACK" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="GIF" fitHeight="247.0" fitWidth="384.0" layoutX="359.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

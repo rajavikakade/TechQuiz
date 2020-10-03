@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="970.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManageAccountsController">
+   <children>
+      <JFXButton fx:id="CloseButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="916.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close" prefHeight="32.0" prefWidth="32.0" ripplerFill="#ed0404" style="-fx-background-color: #f0f0f0; -fx-background-radius: 50px;" text="X" textFill="#212020">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane layoutX="63.0" layoutY="70.0" prefHeight="700.0" prefWidth="829.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="141.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="420.0" text="Edit Account Information" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Next Bold" size="34.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="SaveButton" buttonType="RAISED" layoutX="250.0" layoutY="618.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#save" prefHeight="50.0" prefWidth="200.0" ripplerFill="#4bcedd" style="-fx-background-color: #25271D; -fx-background-radius: 40px;" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TextField fx:id="Name" editable="false" layoutX="148.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" text="123">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="168.0" fill="#4bcedd" layoutX="380.0" layoutY="148.0" opacity="0.7" startX="-230.0" stroke="#25271d" />
+            <TextField fx:id="College" editable="false" layoutX="147.0" layoutY="265.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" text="PICT">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="168.0" fill="#4bcedd" layoutX="380.0" layoutY="315.0" opacity="0.7" startX="-230.0" stroke="#25271d" />
+            <TextField fx:id="Email" editable="false" layoutX="150.0" layoutY="187.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" text="hello@gmail.com">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="168.0" fill="#4bcedd" layoutX="382.0" layoutY="235.0" opacity="0.7" startX="-230.0" stroke="#25271d" />
+            <PasswordField fx:id="Password" editable="false" layoutX="151.0" layoutY="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </PasswordField>
+            <Line endX="169.0" fill="#4bcedd" layoutX="381.0" layoutY="480.0" opacity="0.7" startX="-230.0" stroke="#25271d" />
+            <PasswordField fx:id="ConfirmPassword" layoutX="149.0" layoutY="515.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" visible="false">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </PasswordField>
+            <Line fx:id="cp4" endX="168.0" fill="#4bcedd" layoutX="381.0" layoutY="565.0" opacity="0.7" startX="-230.0" stroke="#25271d" visible="false" />
+            <ComboBox fx:id="ComboBox" editable="true" layoutX="148.0" layoutY="346.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" visibleRowCount="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Line endX="168.0" fill="#4bcedd" layoutX="380.0" layoutY="396.0" opacity="0.7" startX="-230.0" stroke="#25271d" />
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="248.0" layoutY="582.0" prefHeight="17.0" prefWidth="200.0" textFill="#d76060">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="187.0" layoutY="90.0" opacity="0.54" style="-fx-background-color: #ffffff;" text="Name" textFill="#666666">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Line endX="168.0" fill="#4bcedd" layoutX="380.0" layoutY="98.0" opacity="0.7" startX="-153.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="648.0" layoutY="98.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="250.0" layoutY="98.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="100.0" layoutX="81.0" layoutY="98.0" opacity="0.7" startX="70.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="251.0" layoutY="185.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="249.0" layoutY="264.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="649.0" layoutY="184.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="648.0" layoutY="264.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="249.0" layoutY="345.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="647.0" layoutY="344.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="250.0" layoutY="429.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line endX="-99.5" endY="50.0" layoutX="649.0" layoutY="429.0" opacity="0.7" startX="-100.0" stroke="#25271d" />
+            <Line fx:id="cp5" endX="-99.5" endY="50.0" layoutX="649.0" layoutY="515.0" opacity="0.7" startX="-100.0" stroke="#25271d" visible="false" />
+            <Line fx:id="cp3" endX="-99.5" endY="50.0" layoutX="250.0" layoutY="514.0" opacity="0.7" startX="-100.0" stroke="#25271d" visible="false" />
+            <Line endX="100.0" layoutX="81.0" layoutY="185.0" opacity="0.7" startX="70.0" stroke="#25271d" />
+            <Line endX="100.0" layoutX="80.0" layoutY="264.0" opacity="0.7" startX="70.0" stroke="#25271d" />
+            <Line endX="100.0" layoutX="79.0" layoutY="345.0" opacity="0.7" startX="70.0" stroke="#25271d" />
+            <Line endX="100.0" layoutX="80.0" layoutY="429.0" opacity="0.7" startX="70.0" stroke="#25271d" />
+            <Line fx:id="cp2" endX="100.0" layoutX="81.0" layoutY="515.0" opacity="0.7" startX="70.0" stroke="#25271d" visible="false" />
+            <Label layoutX="188.0" layoutY="178.0" opacity="0.54" style="-fx-background-color: #ffffff;" text="Email ID" textFill="#666666">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="186.0" layoutY="256.0" opacity="0.54" style="-fx-background-color: #ffffff;" text="College Name" textFill="#666666">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="338.0" opacity="0.54" style="-fx-background-color: #ffffff;" text="Year" textFill="#666666">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="421.0" opacity="0.54" style="-fx-background-color: #ffffff;" text="Password" textFill="#666666">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="cp1" layoutX="185.0" layoutY="508.0" opacity="0.54" style="-fx-background-color: #ffffff;" text="Confirm Password" textFill="#666666" visible="false">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Line endX="168.0" fill="#4bcedd" layoutX="382.0" layoutY="185.0" opacity="0.7" startX="-140.0" stroke="#25271d" />
+            <Line endX="168.0" fill="#4bcedd" layoutX="380.0" layoutY="264.0" opacity="0.7" startX="-109.0" stroke="#25271d" />
+            <Line endX="168.0" fill="#4bcedd" layoutX="378.0" layoutY="345.0" opacity="0.7" startX="-159.0" stroke="#25271d" />
+            <Line endX="168.0" fill="#4bcedd" layoutX="382.0" layoutY="429.0" opacity="0.7" startX="-137.0" stroke="#25271d" />
+            <Line fx:id="cp6" endX="168.0" fill="#4bcedd" layoutX="381.0" layoutY="515.0" opacity="0.7" startX="-90.0" stroke="#25271d" visible="false" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="572.0" layoutY="108.0" onMouseClicked="#editName" opacity="0.9" ripplerFill="WHITE" style="-fx-border-color: #25271D; -fx-border-radius: 2px; -fx-background-color: #f0f0f0;" text="Edit" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Book" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="572.0" layoutY="197.0" onMouseClicked="#editEmail" opacity="0.9" ripplerFill="WHITE" style="-fx-border-color: #25271D; -fx-border-radius: 2px; -fx-background-color: #f0f0f0;" text="Edit" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Book" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="572.0" layoutY="275.0" onMouseClicked="#editCollege" opacity="0.9" ripplerFill="WHITE" style="-fx-border-color: #25271D; -fx-border-radius: 2px; -fx-background-color: #f0f0f0;" text="Edit" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Book" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="572.0" layoutY="356.0" onMouseClicked="#editYear" opacity="0.9" ripplerFill="WHITE" style="-fx-border-color: #25271D; -fx-border-radius: 2px; -fx-background-color: #f0f0f0;" text="Edit" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Book" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="572.0" layoutY="439.0" onMouseClicked="#editPassword" opacity="0.9" ripplerFill="WHITE" style="-fx-border-color: #25271D; -fx-border-radius: 2px; -fx-background-color: #f0f0f0;" text="Edit" textFill="#25271d">
+               <font>
+                  <Font name="Avenir Book" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+         </children>
+      </Pane>
+      <Label fx:id="saveLabel" alignment="CENTER" layoutX="385.0" layoutY="18.0" prefHeight="25.0" prefWidth="200.0" textFill="#38ae48">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

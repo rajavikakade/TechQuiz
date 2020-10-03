@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="970.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PerformanceReviewController">
+   <children>
+      <JFXButton fx:id="CloseButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="924.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close" prefHeight="32.0" prefWidth="32.0" ripplerFill="#ed0404" style="-fx-background-color: #f0f0f0; -fx-background-radius: 50px;" text="X" textFill="#212020">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <LineChart fx:id="lineChart" horizontalGridLinesVisible="false" layoutX="89.0" layoutY="100.0" legendVisible="false" prefHeight="554.0" prefWidth="803.0" style="-fx-border-width: 2px; -fx-border-color: #000000; -fx-background-color: #f0f0f0;" title="Test Performance History" verticalGridLinesVisible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
